@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('✅ MongoDB Connected!'))
   .catch((err) => console.log('❌ MongoDB Error:', err));
@@ -16,7 +15,9 @@ mongoose.connect(process.env.MONGO_URI)
 const sessionsRouter = require('./routes/sessions');
 app.use('/api/sessions', sessionsRouter);
 
-// Test route
+const githubRouter = require('./routes/github');
+app.use('/api/github', githubRouter);
+
 app.get('/', (req, res) => {
   res.json({ message: '🚀 Dev Productivity Tracker API is running!' });
 });
