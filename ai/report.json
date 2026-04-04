@@ -1,0 +1,18 @@
+{
+  "totalMinutes": 60,
+  "totalHours": 1.0,
+  "totalSessions": 1,
+  "topLanguage": "JavaScript",
+  "languageBreakdown": {
+    "JavaScript": 60
+  },
+  "bestHour": "4:00 AM",
+  "consistencyScore": 10,
+  "daysActive": 1,
+  "suggestions": [
+    "\u23f0 You code best at 4:00 AM \u2014 schedule your hardest tasks then!",
+    "\ud83d\udcbb You spend 100% of your time in JavaScript \u2014 great focus!",
+    "\ud83d\udcc5 Code every day \u2014 even 15 minutes daily beats 3 hours once a week!",
+    "\u2705 Great session length! Averaging 60 mins \u2014 perfect for deep work!"
+  ]
+}
