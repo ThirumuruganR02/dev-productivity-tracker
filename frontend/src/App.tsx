@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import {
-  BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell
+  PieChart, Pie, Cell, Tooltip, ResponsiveContainer
 } from 'recharts';
 import { Clock, Code, GitCommit, Zap, TrendingUp, Star } from 'lucide-react';
 
@@ -21,10 +21,6 @@ interface GithubStats {
   publicRepos: number;
   followers: number;
   topLanguages: Record<string, number>;
-}
-
-interface Suggestion {
-  text: string;
 }
 
 export default function App() {
